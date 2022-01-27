@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import UserList from './lesson 1/UserList';
+import Header from './lesson 2/Header';
+import Content from './lesson 2/Content';
+import Sidebar from './lesson 2/Sidebar';
+import Footer from './lesson 2/Footer';
+import MouseCoordinates from './lesson 3/MouseCoordinates';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Header/>        
       </header>
+      <section>
+        <Content/>
+        <aside>
+          <Sidebar/>
+        </aside>
+      </section>
+      <footer>
+        <Footer/>
+      </footer>
+      
+      <div>
+          <UserList/>
+        </div>
+
+      <div>
+        <MouseCoordinates/>
+      </div>
     </div>
   );
 }

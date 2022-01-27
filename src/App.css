@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -13,16 +13,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;
@@ -35,4 +26,153 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.name--highlighted {
+  color: red;
+}
+.App {
+  width: 100vw;
+  text-align: center;
+}
+.App-header {
+  background-color: #282c34;
+  min-width: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.header-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: brown;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: thistle;
+}
+.header-nav a:hover {
+  box-shadow: darkgray 0px 1px 5px 4px;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+  background:darkgray;
+  color: white;
+}
+
+.content>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+}
+
+.img-one {
+  grid-row: span 2;
+}
+.img-two {
+  grid-row: span 2;
+  grid-column: span 3;
+}
+.img-thre {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.img-four {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.img-five {
+  grid-column: span 4;
+}
+
+section {
+  width: 100%;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.sidebar {
+  height: 100%;
+  position: relative;
+  background: url(../public/image/lamba.jpeg) 0 0 / cover no-repeat ;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  width: 80%;
+  height: 15%;
+  background: rgba(100, 148, 237, 0.308);
+  border-radius: 10px;
+}
+
+input {
+  width: 80%;
+  height: 10%;
+  border-radius: 10px;
+  border-style: none;
+}
+label {
+  color: thistle;
+  text-transform: uppercase;
+}
+
+.form-button {
+  width: 40%;
+  height: 10% ;
+  border-radius: 5px;
+  border-style: none;
+
+}
+.form-button:hover {
+  background-color:rgb(137, 94, 177);
+  color: thistle;  
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: brown;
+}
+footer>a {
+  color: thistle;  
+}
+
+.mouse {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid brown;
+  border-radius: 20px;
+  background-color: cornflowerblue;
+  color: white;
+  margin: 0 auto;
 }
