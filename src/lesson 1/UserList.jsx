@@ -1,4 +1,5 @@
 import User from "./User";
+// import ComposableUser from './ComposableUser';
 
 const data = [{id: "uniq1", name:"Paul"}, 
 {id: "uniq2", name:"Mary"}, 
@@ -12,6 +13,7 @@ const data = [{id: "uniq1", name:"Paul"},
 const UserList = () => {
     return  <div>
         {data.map(item => <User key={item.id} name={item.name} ></User>)}
+        {/* {data.map(item => <ComposableUser key={item.id} name={item.name} ></ComposableUser>)} */}
     </div>
 }
 

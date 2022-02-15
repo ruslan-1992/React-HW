@@ -3,6 +3,8 @@ import React from "react";
 const User = ({name}) => {
     
     let numberreverse = name.toLowerCase().split("").reverse().join('');
+    
+    console.log(numberreverse);
 
     if (name.includes('e')) {
        return  <span>It’s Premium User! Welcome, {name}!</span>
